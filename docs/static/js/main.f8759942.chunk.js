@@ -388,7 +388,7 @@
                   className: 'uk-card-media-left uk-cover-container',
                   children: [
                     Object(b.jsx)('img', {
-                      src: './React-Heroes-App/React-Heroes-App/assets/heroes/'.concat(
+                      src: './React-Heroes-App/assets/heroes/'.concat(
                         r,
                         '.jpg'
                       ),
