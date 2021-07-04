@@ -388,7 +388,7 @@
                   className: 'uk-card-media-left uk-cover-container',
                   children: [
                     Object(b.jsx)('img', {
-                      src: './React-Heroes-App/assets/heroes/'.concat(
+                      src: './React-Heroes-App/React-Heroes-App/assets/heroes/'.concat(
                         r,
                         '.jpg'
                       ),
@@ -498,7 +498,7 @@
               Object(b.jsx)('div', {
                 className: 'uk-width-2-5@s',
                 children: Object(b.jsx)('img', {
-                  src: '/assets/heroes/'.concat(s, '.jpg'),
+                  src: '/React-Heroes-App/assets/heroes/'.concat(s, '.jpg'),
                   alt: i,
                   className: 'animate__animated animate__fadeInLeft',
                 }),
