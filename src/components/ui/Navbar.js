@@ -15,10 +15,12 @@ export const Navbar = () => {
     <div>
       <nav className='uk-navbar-container' uk-navbar=''>
         <div className='uk-navbar-left  uk-hidden@m'>
-          <a className='uk-navbar-toggle' uk-toggle='target: #my-id' href='#!'>
+          <button
+            className='uk-button uk-button-link uk-navbar-toggle'
+            uk-toggle='target: #my-id; cls: uk-open'>
             <span uk-icon='icon: menu'></span>
             <span>menu</span>
-          </a>
+          </button>
         </div>
         <div className='uk-navbar-center'>
           <ul className='uk-navbar-nav  uk-visible@m'>
@@ -71,7 +73,7 @@ export const Navbar = () => {
               <NavLink
                 activeClassName='uk-text-emphasis'
                 to='/marvel'
-                uk-toggle='target: #my-id'>
+                uk-toggle='target: #my-id; cls: uk-open'>
                 <small>Marvel</small>
               </NavLink>
             </li>
@@ -79,7 +81,7 @@ export const Navbar = () => {
               <NavLink
                 activeClassName='uk-text-emphasis'
                 to='/dc'
-                uk-toggle='target: #my-id'>
+                uk-toggle='target: #my-id; cls: uk-open'>
                 <small>DC</small>
               </NavLink>
             </li>
@@ -87,12 +89,15 @@ export const Navbar = () => {
               <NavLink
                 activeClassName='uk-text-emphasis'
                 to='/search'
-                uk-togle='target: #my-id'>
+                uk-togle='target: #my-id; cls: uk-open'>
                 <small>Search</small>
               </NavLink>
             </li>
             <li>
-              <a href='#!' onClick={handleLogOut} uk-toggle='target: #my-id'>
+              <a
+                href='#!'
+                onClick={handleLogOut}
+                uk-toggle='target: #my-id; cls: uk-open'>
                 <small>Log Out</small>
               </a>
             </li>
