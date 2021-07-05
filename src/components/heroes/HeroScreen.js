@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImages';
 import { getHeroesById } from '../../selectors/getHeroesById';
 
 export const HeroScreen = ({ history }) => {
@@ -14,6 +15,7 @@ export const HeroScreen = ({ history }) => {
   const { id, superhero, publisher, alter_ego, first_appearance, characters } =
     hero;
 
+  // console.log(heroImages(`./${id}.jpg`));
   const handleReturn = () => {
     if (history.length <= 2) {
       history.push('/');
@@ -27,7 +29,7 @@ export const HeroScreen = ({ history }) => {
       <div className='uk-width-2-5@s'>
         {/* <img src={`/assets/heroes/${id}.jpg`} /> */}
         <img
-          src={`/assets/heroes/${id}.jpg`}
+          src={heroImages(`./${id}.jpg`).default}
           alt={superhero}
           className='animate__animated animate__fadeInLeft'
         />
